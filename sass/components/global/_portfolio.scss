@@ -1,0 +1,207 @@
+
+.portfolio{
+    background-image: url("../../../dist/image/portfolio/port-banner.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 76px;
+
+
+    &__title_area{
+        padding-top: 180px;
+        padding-bottom: 70px;
+
+        h2{
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+    }
+    &__button-area{
+        padding-bottom: 185px;
+        button{
+            @include btn_primary(15px,0);
+            padding: 15px 33px;
+        }
+    }
+}
+
+@media only screen and (max-width: 576px){
+.portfolio{
+  background-image: url("../../../dist/image/portfolio/mobile.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 76px;
+
+
+  &__title_area{
+      padding-top: 109px;
+      padding-bottom: 70px;
+    
+
+      h2{
+          color: #fff;
+          font-size: 32px;
+          font-weight: bold;
+          text-align: center;
+      }
+
+  }
+  &__button-area{
+    text-align: center;
+      padding-bottom: 106px;
+      button{
+          @include btn_primary(15px,0);
+          padding: 15px 33px;
+      }
+  }
+}
+}
+
+.choice {
+  margin-top: 60px;
+  margin-bottom: 120px;
+  &__card {
+    margin-top: 60px;
+    img {
+    }
+    h4 {
+      @include card_title(#000);
+      background: linear-gradient(to right, #00469f 10%, #1e79d6 70%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      padding-top: 40px;
+      padding-bottom: 10px;
+    }
+    p {
+      @include card_text();
+      color: rgba(64, 64, 64, 0.6);
+      padding: 0 39px;
+    }
+  }
+  .choice-title{
+      font-size: 32px;
+  }
+}
+
+
+
+.demo {
+  &__title-area {
+    h2 {
+      @include section_title($dark_color);
+    }
+    p {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      color: rgba(64, 64, 64, 0.6);
+      width: 62%;
+      margin: 21px auto;
+      margin-bottom: 40px;
+    }
+  }
+  &__image-area{
+      img{
+          border-radius: 20px;
+      }
+      margin-top: 24px;
+  }
+  &__button-area{
+      margin-top: 90px;
+      margin-bottom: 120px;
+     button{
+        @include btn_primary(10px, 0);
+        padding: 15px 53px;
+     }
+  }
+}
+
+@media only screen and (max-width: 576px){
+   
+.demo {
+  &__title-area {
+    h2 {
+      @include section_title($dark_color);
+    }
+    p {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      color: rgba(64, 64, 64, 0.6);
+      width: 100%;
+      margin: 21px auto;
+      margin-bottom: 40px;
+    }
+  }
+  &__image-area{
+      img{
+          border-radius: 20px;
+      }
+      margin-top: 24px;
+  }
+  &__button-area{
+      margin-top: 90px;
+      margin-bottom: 120px;
+     button{
+        @include btn_primary(10px, 0);
+        padding: 15px 53px;
+     }
+  }
+}
+}
+
+
+.rate{
+    background: #F5F6FA;
+    margin: 120px 0;
+
+    &__title-area{
+        h2{
+            margin-top: 94px;
+            margin-bottom: 62px;
+            @include section_title($dark_color);
+        }
+        button{
+            @include btn_primary(15px, 0);
+            padding: 17px 63px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 576px){
+  .rate{
+    background: #F5F6FA;
+    margin: 120px 0;
+
+    &__title-area{
+      text-align: center;
+        h2{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            @include section_title($dark_color);
+            font-size: 32px;
+            text-align: center;
+
+        }
+        button{
+            @include btn_primary(15px, 0);
+            padding: 17px 63px;
+            margin-bottom: 40px;
+            padding-bottom: 10px;
+        }
+    }
+  &__image-area{
+    padding: 30px 0; 
+    text-align: center;
+    img{
+      padding: 40px 0; 
+    }
+  }
+}
+}

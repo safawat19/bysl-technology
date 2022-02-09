@@ -1,0 +1,34 @@
+.client{
+    margin-bottom: 227px;
+    &__title{
+        h2{
+            @include section_title($dark_color);
+        }
+        .logo_area{
+            margin-bottom: 100px;
+        }
+    }
+    &__brand-Image{
+        margin-top: 20px;
+     
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .client{
+        margin-bottom: 127px;
+        &__title{
+            h2{
+                @include section_title($dark_color);
+                font-size: 24px;
+            }
+            .logo_area{
+                margin-bottom: 100px;
+            }
+        }
+        &__brand-Image{
+            margin-top: 20px;
+         
+        }
+    }
+}

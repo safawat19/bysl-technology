@@ -1,0 +1,161 @@
+
+.footer-top {
+  padding: 70px 0px 50px 0px;
+  background-color: #ebf5ff;
+  &__logo {
+    img {
+    }
+  }
+  &__address-area {
+    margin-top: 70px;
+    h4 {
+      margin-bottom: 10px;
+      @include title(
+        $offset_blue_color,
+        $font_md,
+        700,
+        29px,
+        inherit,
+        capitalize
+      );
+    }
+    p {
+      @include title($dark_color, $font_sm, normal, 17px, inherit, capitalize);
+    }
+  }
+}
+
+.footer-bottom {
+
+  background: $blue_light_gradient;
+  padding: 79px 0px;
+
+  &__content {
+    .title {
+      h4 {
+        margin-bottom: 25px;
+        @include title(#fff, 20px, 700, 24px, inherit, none);
+      }
+    }
+    .footerLink {
+      p {
+        margin-bottom: 15px;
+        @include title(#fff, $font_sm, 300, 19px, inherit, none);
+      }
+      ul {
+      }
+      ul li {
+        margin-bottom: 15px;
+        list-style: none;
+      }
+      ul li a {
+        text-decoration: none;
+        @include title(#fff, $font_sm, 300, 19px, inherit, none);
+      }
+    }
+  }
+
+  &__copy-area{
+    p{
+      color: #fff;
+    }
+  }
+  &__social-area{
+    ul{}
+    ul li{
+      list-style: none;
+      display: inline-block;
+      margin-right: 14px;
+    }
+    ul li a{
+      font-size: 25px;
+      color: #74A7DF;
+    }
+    ul li a:hover{
+      color: #fff;
+    }
+    ul li a i{}
+  }
+
+}
+//responsive code
+@media (min-width:576px) and (max-width: 992px){
+
+  .footer-top {
+
+    &__address-area {
+      h4 {
+        text-align: center;
+       }
+      p {
+       text-align: center;
+      }
+    }
+  }
+  .footer-bottom {
+      &__copy-area{
+        p{
+          color: #fff;
+          text-align: center;
+        }
+      }
+      &__social-area{
+        text-align: center;
+      }
+    
+    }
+}
+@media only screen and (max-width: 576px){
+  .footer-top {
+
+    &__address-area {
+      h4 {
+        text-align: center;
+       }
+      p {
+       text-align: center;
+      }
+    }
+  }
+    .footer-bottom {
+      
+        &__content {
+          .title {
+            h4 {
+              margin-bottom: 25px;
+              margin-top: 14px;
+              @include title(#fff, 14px, 700, 24px, inherit, none);
+            }
+          }
+          .footerLink {
+            p {
+              margin-bottom: 10px;
+              @include title(#fff, 14px, 300, 19px, inherit, none);
+            }
+            ul {
+            }
+            ul li {
+              margin-bottom: 1px;
+              list-style: none;
+            }
+            ul li a {
+              text-decoration: none;
+              @include title(#fff, 12px, 300, 19px, inherit, none);
+            }
+          }
+        }
+
+        &__copy-area{
+          p{
+            color: #fff;
+            text-align: center;
+          }
+        }
+        &__social-area{
+          text-align: center;
+        }
+      
+      }
+}
+
+

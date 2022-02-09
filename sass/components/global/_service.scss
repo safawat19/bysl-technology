@@ -1,0 +1,123 @@
+.service {
+    margin-bottom: 180px;
+  &__title {
+      margin-bottom: 60px;
+    .title_area {
+      p {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        background: linear-gradient(to right, #00469f 100%, #1e79d6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .text_under {
+        width: 58px;
+        height: 3px;
+        background-image: linear-gradient(
+          to right,
+          #00469f 2.8%,
+          #1e79d6 98.2%
+        );
+        margin-bottom: 10px;
+        border-radius: 2px;
+      }
+      h2 {
+        @include section_title($dark_color);
+      }
+    }
+  }
+
+  &__card{
+    background: #FFFFFF;
+    box-shadow: -4px 4px 20px rgba(3, 58, 140, 0.1);
+    border-radius: 20px;
+    padding: 25px 10px;
+    height: 271px;
+    margin-bottom:60px;
+    margin-right: 17px;
+      img{
+          margin-bottom: 16px;
+      }
+      h4{
+        padding: 10px 0;
+        @include card_title(#000);
+      }
+      p{
+        @include card_text();
+        padding: 10px 0;
+        height: 70px;
+      }
+      .link_area{
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        margin: 18px auto;
+        border: 1px solid #C4D2E4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            color:#00469f;
+        }
+      }
+  }
+  &__card:hover .link_area {
+    background-image: linear-gradient(84.92deg, #00469F 2.05%, #1E79D6 99.48%);
+  }
+  &__card:hover .link_area a {
+       color: #fff;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 576px){
+    .service {
+      &__title {
+        .title_area {
+            text-align: center;
+            .text_under {
+               margin: 0 auto;
+                margin-bottom: 0px;
+                border-radius: 2px;
+              }
+          h2 {
+            @include section_title($dark_color);
+            font-size: 24px;
+          }
+        }
+      }
+    
+      &__card{
+        margin-bottom: 28px;
+        height: 150px;
+        margin-right: 3px;
+          img{
+              height: 40px;
+              width: 40px;
+              margin-bottom: 16px;
+          }
+          h4{
+            padding: 10px 0;
+            @include card_title(#000);
+            font-size: 14px;
+          }
+          p{
+            display: none;
+          }
+          .link_area{
+              display: none;
+          }
+      }
+      &__card:hover .link_area {
+        background-image: linear-gradient(84.92deg, #00469F 2.05%, #1E79D6 99.48%);
+      }
+      &__card:hover .link_area a {
+           color: #fff;
+      }
+    
+    
+    }
+}

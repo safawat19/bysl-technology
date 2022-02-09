@@ -1,0 +1,17 @@
+.feature{
+    margin-top: 60px;
+    margin-bottom: 160px;
+    &__card{
+        img{}
+        h4{
+            @include card_title($dark_color);
+            padding: 10px 0;
+           
+        }
+        p{
+            @include card_text();
+            
+        }
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,294 @@
+.blog {
+  margin-bottom: 124px;
+  &__title {
+    .title_area {
+      p {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        background: linear-gradient(to right, #00469f 100%, #1e79d6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .text_under{
+        width: 58px;
+        height: 3px;
+        background-image: linear-gradient(to right, #00469f 2.8%, #1e79d6 98.2%);
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border-radius: 2px;
+      }
+      h2 {
+        @include section_title($dark_color);
+      }
+      .extra_color {
+        color: $offset_blue_color;
+      }
+    }
+    .logo_area {
+      margin-bottom: 40px;
+      img {
+      }
+    }
+  }
+
+  &__card {
+    background: #ffffff;
+    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    margin-bottom: 60px;
+    .image_area {
+      img {
+        border-radius: 5px;
+        width: 100%;
+      }
+    }
+    .text_area {
+      padding: 41px 23px 25px 30px;
+      border-bottom: 1px solid #eaeaea;
+      .cardText {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        color: #408cd9;
+      }
+      h4 {
+        @include card_title($dark_color);
+        margin-bottom: 15px;
+      }
+      p {
+        @include card_text();
+      }
+    }
+    .footer_area {
+      padding: 14px 0;
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        background: linear-gradient(to right, #00469f 100%, #1e79d6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    .footer_area:hover {
+      background: linear-gradient(84.92deg, #00469f 2.05%, #1e79d6 99.48%);
+    }
+    .footer_area:hover a {
+      background: linear-gradient(to right, #fff 100%, #fff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+@media (min-width:576px) and (max-width: 1200px){
+    .blog {
+        &__card {
+          margin-top: 20px;
+        }
+      }
+}
+@media only screen and (max-width: 576px){
+    .blog {
+        &__title {
+          .title_area {
+            h2 {
+              @include section_title($dark_color);
+              font-size: 24px;
+              line-height: 30px;
+            }
+          }
+        }
+      
+        &__card {
+          margin-top: 20px;
+        }
+      }
+}
+
+
+.mobile-blog {
+  margin-bottom: 124px;
+  display: none;
+  &__title {
+    .title_area {
+      p {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        background: linear-gradient(to right, #00469f 100%, #1e79d6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .text_under{
+        width: 58px;
+        height: 3px;
+        background-image: linear-gradient(to right, #00469f 2.8%, #1e79d6 98.2%);
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border-radius: 2px;
+      }
+      h2 {
+        @include section_title($dark_color);
+      }
+      .extra_color {
+        color: $offset_blue_color;
+      }
+    }
+    .logo_area {
+      margin-bottom: 40px;
+      img {
+      }
+    }
+  }
+
+  &__card {
+    background: #ffffff;
+    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    margin-bottom: 60px;
+    .image_area {
+      img {
+        border-radius: 5px;
+        width: 100%;
+      }
+    }
+    .text_area {
+      padding: 41px 23px 25px 30px;
+      border-bottom: 1px solid #eaeaea;
+      .cardText {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        color: #408cd9;
+      }
+      h4 {
+        @include card_title($dark_color);
+        margin-bottom: 15px;
+      }
+      p {
+        @include card_text();
+      }
+    }
+    .footer_area {
+      padding: 14px 0;
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        background: linear-gradient(to right, #00469f 100%, #1e79d6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    .footer_area:hover {
+      background: linear-gradient(84.92deg, #00469f 2.05%, #1e79d6 99.48%);
+    }
+    .footer_area:hover a {
+      background: linear-gradient(to right, #fff 100%, #fff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px){
+  .blog{
+    display: none;
+  }
+  .mobile-blog {
+    margin-bottom: 124px;
+    display: block;
+    &__title {
+      .title_area {
+        p {
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 22px;
+          background: linear-gradient(to right, #00469f 100%, #1e79d6 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        .text_under{
+          width: 58px;
+          height: 3px;
+          background-image: linear-gradient(to right, #00469f 2.8%, #1e79d6 98.2%);
+          margin: 0 auto;
+          margin-bottom: 10px;
+          border-radius: 2px;
+        }
+        h2 {
+          @include section_title($dark_color);
+          font-size: 24px;
+          line-height: 34px;
+        }
+        .extra_color {
+          color: $offset_blue_color;
+        }
+      }
+      .logo_area {
+        margin-bottom: 40px;
+        img {
+        }
+      }
+    }
+  
+    &__card {
+      background: #ffffff;
+      box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.05);
+      border-radius: 5px;
+      margin-bottom: 60px;
+      margin-right: 8px;
+      .image_area {
+        img {
+          border-radius: 5px;
+          width: 100%;
+        }
+      }
+      .text_area {
+        padding: 10px;
+        border-bottom: 1px solid #eaeaea;
+        .cardText {
+          font-weight: bold;
+          font-size: 12px;
+          line-height: 14px;
+          color: #408cd9;
+        }
+        h4 {
+          @include card_title($dark_color);
+          margin-bottom: 15px;
+          font-size: 16px;
+        }
+        p {
+          @include card_text();
+        }
+      }
+      .footer_area {
+        padding: 14px 0;
+        a {
+          text-decoration: none;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 19px;
+          background: linear-gradient(to right, #00469f 100%, #1e79d6 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      .footer_area:hover {
+        background: linear-gradient(84.92deg, #00469f 2.05%, #1e79d6 99.48%);
+      }
+      .footer_area:hover a {
+        background: linear-gradient(to right, #fff 100%, #fff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+  .blog {
+    display: none;
+  }
+}

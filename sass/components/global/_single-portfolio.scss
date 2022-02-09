@@ -1,0 +1,630 @@
+.single-banner {
+  // background: linear-gradient(84.92deg, #a9698ba6 2.05%, #5f9ddd4f 99.48%);
+  // opacity: 0.6;
+  //  filter: blur(400px);
+  // border-radius: 62px;
+  // height: 100vh;
+
+  position: relative;
+  // margin-bottom: 105px;
+  // padding-bottom: 105px;
+  z-index: 2;
+  background-image: url("../../../dist/image/single-portfolio/banner/Rectangle\ 7936.svg");
+  background-size: cover;
+  background-position: center center;
+  //   filter: blur(700px);
+  //   background: linear-gradient(84.92deg, #BB0768 2.05%, #4CA1F8 99.48%);
+  // opacity: 0.6;
+  // filter: blur(700px);
+  // border-radius: 62px;
+
+  &__middle_area {
+    width: 100%;
+    /* position: relative; */
+    // height: 800px;
+    margin: 0 auto;
+    transition: all 0.5s ease;
+
+    .img_one {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      animation: animate-mouth 1.6s forwards;
+      animation-delay: 1s;
+    }
+
+    @keyframes animate-mouth {
+      100% {
+        /* transform: translateX(-80%); */
+        left: 10%;
+      }
+    }
+    .img_two {
+      position: absolute;
+      left: 50%;
+      top: 60%;
+      animation: animate-two 1.6s forwards;
+      animation-delay: 1s;
+    }
+
+    @keyframes animate-two {
+      100% {
+        left: 18%;
+        top: 31%;
+      }
+    }
+
+    .img_three {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      animation: animate-three 1.6s forwards;
+      animation-delay: 1s;
+    }
+
+    @keyframes animate-three {
+      100% {
+        top: 45%;
+        left: 11%;
+      }
+    }
+
+    .img_four {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      animation: animate-four 1.6s forwards;
+      animation-delay: 1s;
+    }
+
+    @keyframes animate-four {
+      100% {
+        top: 11%;
+        left: 24%;
+      }
+    }
+
+    .img_five {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      animation: animate-five 1.6s forwards;
+      animation-delay: 1s;
+    }
+    @keyframes animate-five {
+      100% {
+        left: 85%;
+      }
+    }
+
+    .img_six {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      animation: animate-six 1.6s forwards;
+      animation-delay: 1s;
+    }
+    @keyframes animate-six {
+      100% {
+        top: 11%;
+        left: 80%;
+      }
+    }
+
+    .img_seven {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      animation: animate-seven 1.6s forwards;
+      animation-delay: 1s;
+    }
+    @keyframes animate-seven {
+      100% {
+        top: 20%;
+        left: 85%;
+      }
+    }
+
+    .img_eight {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      animation: animate-eight 1.6s forwards;
+      animation-delay: 1s;
+    }
+    @keyframes animate-eight {
+      100% {
+        top: 35%;
+        left: 85%;
+      }
+    }
+
+    .img_nine {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      animation: animate-nine 1.6s forwards;
+      animation-delay: 1s;
+    }
+    @keyframes animate-nine {
+      100% {
+        top: 11%;
+        left: 70%;
+      }
+    }
+
+    .banner-title {
+      h2 {
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 58px;
+        color: #404040;
+        margin-bottom: 20px;
+        margin-top: 100px;
+      }
+      p {
+        color: #fff;
+      }
+      button {
+        background: linear-gradient(84.92deg, #00469f 2.05%, #1e79d6 99.48%);
+        border-radius: 10px;
+        padding: 15px 66px;
+        border: 0;
+        color: #fff;
+        font-weight: 600;
+        margin-bottom: 120px;
+        margin-top: 50px;
+      }
+    }
+    .banner-image {
+      // position: absolute;
+
+      z-index: 99999;
+      img {
+        // position: absolute;
+        z-index: 9999999;
+      }
+    }
+  }
+  &::before {
+    background: linear-gradient(84.92deg, #bb0768 2.05%, #4ca1f8 99.48%);
+    opacity: 0.6;
+    filter: blur(500px);
+    border-radius: 62px;
+    z-index: 1;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .single-banner {
+    margin-top: -5px;
+    &__middle_area {
+      width: 100%;
+      margin: 0 auto;
+      transition: all 0.5s ease;
+
+      .img_one {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        animation: animate-mouth 1.6s forwards;
+        animation-delay: 1s;
+      }
+
+      @keyframes animate-mouth {
+        100% {
+          top: 105%;
+          left: 10%;
+        }
+      }
+      .img_two {
+        position: absolute;
+        left: 50%;
+        top: 60%;
+        animation: animate-two 1.6s forwards;
+        animation-delay: 1s;
+      }
+
+      @keyframes animate-two {
+        100% {
+          left: 10%;
+          top: 31%;
+        }
+      }
+
+      .img_three {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        animation: animate-three 1.6s forwards;
+        animation-delay: 1s;
+      }
+
+      @keyframes animate-three {
+        100% {
+          top: 45%;
+          left: 11%;
+        }
+      }
+
+      .img_four {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        animation: animate-four 1.6s forwards;
+        animation-delay: 1s;
+      }
+
+      @keyframes animate-four {
+        100% {
+          top: 10%;
+          left: 10%;
+        }
+      }
+
+      .img_five {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        animation: animate-five 1.6s forwards;
+        animation-delay: 1s;
+      }
+      @keyframes animate-five {
+        100% {
+          left: 35%;
+          top: 58%;
+        }
+      }
+
+      .img_six {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        animation: animate-six 1.6s forwards;
+        animation-delay: 1s;
+      }
+      @keyframes animate-six {
+        100% {
+          top: 105%;
+          left: 80%;
+        }
+      }
+
+      .img_seven {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        animation: animate-seven 1.6s forwards;
+        animation-delay: 1s;
+      }
+      @keyframes animate-seven {
+        100% {
+          top: 25%;
+          left: 70%;
+        }
+      }
+
+      .img_eight {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        animation: animate-eight 1.6s forwards;
+        animation-delay: 1s;
+      }
+      @keyframes animate-eight {
+        100% {
+          top: 50%;
+          left: 75%;
+        }
+      }
+
+      .img_nine {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        animation: animate-nine 1.6s forwards;
+        animation-delay: 1s;
+      }
+      @keyframes animate-nine {
+        100% {
+          top: 0%;
+          left: 50%;
+        }
+      }
+
+      .banner-title {
+        h2 {
+          font-size: 24px;
+          line-height: 29px;
+          margin-top: 57px;
+        }
+        p {
+          color: #fff;
+          font-size: 12px;
+          line-height: 14px;
+        }
+        button {
+          background: linear-gradient(84.92deg, #00469f 2.05%, #1e79d6 99.48%);
+          border-radius: 10px;
+          padding: 15px 66px;
+          border: 0;
+          color: #fff;
+          font-weight: 600;
+          margin-bottom: 120px;
+          margin-top: 50px;
+        }
+      }
+      .banner-image {
+        z-index: 99999;
+        img {
+          z-index: 9999999;
+        }
+      }
+    }
+    &::before {
+      background: linear-gradient(84.92deg, #bb0768 2.05%, #4ca1f8 99.48%);
+      opacity: 0.6;
+      filter: blur(500px);
+      border-radius: 62px;
+      z-index: 1;
+    }
+  }
+}
+
+.bg-blur {
+  background: linear-gradient(84.92deg, #bb0768 2.05%, #4ca1f8 99.48%);
+  opacity: 0.6;
+  filter: blur(700px);
+  border-radius: 62px;
+  z-index: 1;
+  height: 200px;
+}
+
+.design {
+  &__title-area {
+    text-align: center;
+    margin-bottom: 80px;
+    h3 {
+      font-weight: 900;
+      font-size: 36px;
+      line-height: 43px;
+      align-items: center;
+      color: #000000;
+      margin: 16px 0px;
+    }
+    p {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      margin: 16px 0px;
+      color: #02569d;
+    }
+  }
+  &__card-area {
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: -4px 4px 20px rgba(3, 58, 140, 0.1);
+    border-radius: 20px;
+    width: 211px;
+    margin-bottom: 62px;
+    .card-icon {
+    }
+    .card-description {
+      h4 {
+        font-size: 16px;
+        line-height: 20px;
+        margin: 20px 0px;
+        color: #02569d;
+        font-weight: bold;
+      }
+      ul {
+        list-style: none;
+      }
+      ul li {
+        font-size: 16px;
+        line-height: 20px;
+        color: rgba(0, 0, 0, 0.6);
+        margin: 10px 0;
+        position: relative;
+      }
+      ul li:before {
+        content: "";
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        background: linear-gradient(
+          85.31deg,
+          #560bad 2.98%,
+          #b5179e 53.26%,
+          #f72585 99.51%
+        );
+        top: 7px;
+        left: -12px;
+        border-radius: 50%;
+      }
+    }
+  }
+  &__image-area {
+    display: flex;
+    align-items: center;
+    height: 264px;
+    margin-left: -34px;
+    img {
+      width: 100%;
+    }
+    .exceptional-image {
+      margin-top: -185px;
+      width: 251px;
+      margin-left: -7px;
+    }
+  }
+
+  .mobile_content {
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 577px) and (max-width: 1399px){
+  .design {
+    &__image-area {
+      display: none;
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 576px) {
+  .design {
+    .mobile_device {
+      display: none;
+    }
+
+    &__title-area {
+      text-align: center;
+      margin-bottom: 80px;
+      h3 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+    .mobile_content {
+      display: block;
+      .mobile_card_area {
+        padding: 20px;
+        background: #ffffff;
+        box-shadow: -4px 4px 20px rgba(3, 58, 140, 0.1);
+        border-radius: 20px;
+        .card-icon {
+          margin-top: 20px;
+          // margin-left: -20px;
+          img {
+            margin-right: 20px;
+          }
+        }
+        .card-description {
+          h4 {
+            font-size: 16px;
+            line-height: 20px;
+            margin: 20px -14px;
+            color: #02569d;
+            font-weight: bold;
+          }
+          ul {
+            list-style: none;
+          }
+          ul li {
+            font-size: 16px;
+            line-height: 20px;
+            color: rgba(0, 0, 0, 0.6);
+            margin: 10px 0;
+            position: relative;
+          }
+          ul li:before {
+            content: "";
+            position: absolute;
+            width: 7px;
+            height: 7px;
+            background: linear-gradient(
+              85.31deg,
+              #560bad 2.98%,
+              #b5179e 53.26%,
+              #f72585 99.51%
+            );
+            top: 7px;
+            left: -12px;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.information {
+  margin-bottom: 126px;
+  margin-top: 120px;
+  &__title-area {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 60px;
+    img {
+    }
+    h3 {
+      font-weight: 900;
+      font-size: 36px;
+      line-height: 43px;
+      color: #404040;
+      margin: 16px 0px;
+      margin-top: 24px;
+      margin-bottom: 16px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 20px;
+      color: #015ca1;
+      margin-bottom: 16px;
+    }
+  }
+  &__image-area {
+    img {
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .information {
+    &__title-area {
+      h3 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.showcase {
+  margin-bottom: 305px;
+  background-image: url("../../../dist/image/single-portfolio/single-bannar.png");
+  height: 980px;
+  padding-top: 60px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__image {
+    .extra-image {
+      margin-top: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .showcase {
+    margin-bottom: 305px;
+    background-image: url("../../../dist/image/single-portfolio/single-bannar.png");
+    height: auto;
+    padding-top: 60px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__image {
+      .extra-image {
+        margin-top: 50px;
+        width: 382px;
+        height: 235px;
+      }
+      .imageOne{
+        margin-top: 50px;
+      }
+    }
+  }
+}

@@ -1,0 +1,125 @@
+nav {
+  background: transparent;
+}
+.navbar-light .navbar-nav .nav-link {
+    padding: 10px 20px;
+    font-weight: 500;
+    color: #9ABAD6;
+    font-size: 16px;
+    font-weight: bold;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    background: linear-gradient(to right, #004397 10%, #408cd9 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.banner {
+  background-image: url("../../../dist/image/Frame\ 19.png");
+
+ &__btn_contact{
+      @include btn_primary(10px,0);
+      padding: 12px 30px;
+  }
+  &__title_area {
+    padding-top: 183px;
+    padding-bottom: 90px;
+    h3 {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 43px;
+      background: linear-gradient(to right, #004397 10%, #408cd9 70%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    h1 {
+      font-weight: 900;
+      font-size: 72px;
+      line-height: 86px;
+      background: linear-gradient(to right, #00469f 10%, #1e79d6 70%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    h4 {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 43px;
+        color: #404040;
+    }
+  }
+  &__button{
+      padding-bottom: 62px;
+      button{
+          @include btn_primary(5px,15px);
+      }
+      .secondary_btn{
+          @include btn_primary(5px,15px);
+          background: #fff;
+          border: 1px solid #D3E1F1;
+          background: linear-gradient(to right, #00469f 10%, #1e79d6 70%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-weight: bold;
+      }
+  }  
+}
+
+
+@media(max-width: 576px) {
+
+  .banner {
+    background-image: url("../../../dist/image/Frame\ 19.png");
+  
+   &__btn_contact{
+        @include btn_primary(10px,0);
+        padding: 12px 30px;
+    }
+    &__title_area {
+      padding-top: 112px;
+      padding-bottom: 60px;
+      h3 {
+        font-size: 24px;
+        text-align: center;
+
+   
+      }
+      h1 {
+        font-size: 56px;
+        text-align: center;
+      }
+      h4 {
+        font-size: 24px;
+        text-align: center;
+        line-height: 1px;
+      }
+    }
+    &__button{
+        padding-bottom: 62px;
+        text-align: center;
+        button{
+            @include btn_primary(5px,15px);
+            margin-bottom: 10px;
+           
+            
+        }
+        .secondary_btn{
+            @include btn_primary(5px,15px);
+            background: #fff;
+            border: 1px solid #D3E1F1;
+            background: linear-gradient(to right, #00469f 10%, #1e79d6 70%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+            text-align: center;
+            margin-right: 12%;
+        }
+    }  
+  }
+}
+
+
+
+
+
+

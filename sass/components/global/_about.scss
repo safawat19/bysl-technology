@@ -1,0 +1,228 @@
+.about {
+  margin-bottom: 60px;
+  margin-top: 60px;
+  &__title {
+    margin-bottom: 60px;
+    .title_area {
+      p {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        background: linear-gradient(to right, #00469f 100%, #1e79d6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .text_under {
+        width: 58px;
+        height: 3px;
+        background-image: linear-gradient(
+          to right,
+          #00469f 2.8%,
+          #1e79d6 98.2%
+        );
+        margin-bottom: 10px;
+        border-radius: 2px;
+      }
+      h2 {
+        @include section_title($dark_color);
+      }
+    }
+  }
+  &__description {
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.01em;
+      background: linear-gradient(to right, #023e8a 30%, #0077b6 10%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &__card {
+    padding: 40px 25px 30px 25px;
+    background: linear-gradient(
+      84.92deg,
+      rgba(0, 67, 151, 0.1) 2.05%,
+      rgba(64, 140, 217, 0.1) 99.48%
+    );
+    border-radius: 10px;
+    margin-right: 29px;
+    margin-bottom: 42px;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    height: 333px;
+
+    .card_head_area {
+      display: flex;
+      justify-content: space-between;
+      img {
+      }
+      h2 {
+        // background: linear-gradient(to right, #BCCFE3 20%, #BCD9EB 20%);
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        color: #bccfe3;
+        font-weight: 900;
+        font-size: 64px;
+        line-height: 77px;
+      }
+    }
+    .card_body {
+      h4 {
+        padding: 40px 0 20px 0;
+        @include card_title($dark_color);
+      }
+      p {
+        background: linear-gradient(to right, #023e8a 30%, #0077b6 10%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+  &__card:hover {
+    background: linear-gradient(84.92deg, #00469f 2.05%, #1e79d6 99.48%);
+  }
+  &__card:hover h2 {
+    color: #2c79cc;
+    font-size: 105px;
+  }
+  &__card:hover .card_body h4 {
+    color: #fff;
+  }
+  &__card:hover .card_body p {
+    background: linear-gradient(to right, #fff 100%, #fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.about-mobile{
+  display: none;
+}
+
+
+@media (max-width: 576px) {
+  .about{
+    display: none;
+  }
+  .about-mobile {
+    margin-bottom: 60px;
+    margin-top: 60px;
+    display: block;
+    &__title {
+
+      margin-bottom: 20px;
+      .title_area {
+        text-align: center;
+        p {
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 22px;
+          background: linear-gradient(to right, #00469f 100%, #1e79d6 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          text-align: center;
+        }
+        .text_under {
+          width: 58px;
+          height: 3px;
+          background-image: linear-gradient(
+            to right,
+            #00469f 2.8%,
+            #1e79d6 98.2%
+          );
+          margin: 0 auto;
+          margin-bottom: 10px;
+          border-radius: 2px;
+        }
+        h2 {
+          @include section_title($dark_color);
+          font-size: 36px;
+          text-align: center;
+        }
+      }
+    }
+    &__description {
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.01em;
+        background: linear-gradient(to right, #023e8a 30%, #0077b6 10%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    }
+  
+    &__card {
+      padding:10px;
+      background: linear-gradient(
+        84.92deg,
+        rgba(0, 67, 151, 0.1) 2.05%,
+        rgba(64, 140, 217, 0.1) 99.48%
+      );
+      border-radius: 10px;
+      margin-right: 8px;
+      margin-bottom: 42px;
+      transition: all 0.3s ease-in-out 0s;
+      cursor: pointer;
+      height: 333px;
+  
+      .card_head_area {
+        display: flex;
+        justify-content: space-between;
+        img {
+          width: 40px;
+          height: 35px;
+        }
+        h2 {
+          // background: linear-gradient(to right, #BCCFE3 20%, #BCD9EB 20%);
+          // -webkit-background-clip: text;
+          // -webkit-text-fill-color: transparent;
+          color: #bccfe3;
+          font-weight: 900;
+          font-size: 36px;
+          line-height: 77px;
+          margin-top: -22px;
+        }
+      }
+      .card_body {
+        h4 {
+          padding: 5px 0;
+          @include card_title($dark_color);
+          font-size: 16px;
+        }
+        p {
+          background: linear-gradient(to right, #023e8a 30%, #0077b6 10%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-weight: normal;
+          font-size: 10px;
+          line-height: 17px;
+        }
+      }
+    }
+    &__card:hover {
+      background: linear-gradient(84.92deg, #00469f 2.05%, #1e79d6 99.48%);
+    }
+    &__card:hover h2 {
+      color: #2c79cc;
+      font-size: 105px;
+    }
+    &__card:hover .card_body h4 {
+      color: #fff;
+    }
+    &__card:hover .card_body p {
+      background: linear-gradient(to right, #fff 100%, #fff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
